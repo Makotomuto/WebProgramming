@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>ユーザ一覧</title>
+	<style>
+	html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%
+	}
+
+	header {
+		position: fixed !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+    	height: 50px;
+    	background: #A4A4A4;
+    	color: #000;
+    	font-weight: bold
+	}
+	span#userName{
+	position: absolute;
+	color: #FFF;
+	bottom: 0;
+	right: 200px;}
+
+	span#logOut{
+	position: absolute;
+	bottom: 0;
+	right: 70px;
+	text-decoration: underline;
+	color: #FF0000;
+	}
+
+	#container{
+	padding:70px 0;}
+
+	h1{
+	text-align: center;}
+
+	.signUp{
+	position: absolute;
+	left: 1245px;
+	text-decoration: underline;
+	color: blue;
+	}
+
+	p{
+	font-weight: bold}
+
+	.submit{
+	position: relative;
+	left: 300px;
+	}
+
+	table {
+	border-collapse: collapse;
+	margin-left: auto;
+ 	margin-right: auto;
+	width: 40%;
+	}
+	th{
+	background-color: #D8D8D8;}
+	th,td {
+	border: solid 1px;
+	padding: 0.5em;
+	}
+
+	.detail_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #5858FA;
+    transition: .4s;
+	}
+
+	.detail_btn:hover {
+  	  background: #58ACFA;
+	}
+	.update_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #04B45F;
+    transition: .4s;
+	}
+
+	.update_btn:hover {
+  	  background: #3ADF00;
+	}
+	.delete_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #FA5858;
+    transition: .4s;
+	}
+
+	.delete_btn:hover {
+  	  background: #F78181;
+	}
+
+
+	</style>
+	</head>
+	<body style="overflow-x: hidden;">
+		<header>
+			<span id = userName>ユーザー名 さん</span>
+			<span id = logOut><a href="#" style="color:#ff0000;text-decoration:none">ログアウト</a></span>
+
+		</header>
+	<div id="container">
+		<h1>ユーザ一覧</h1>
+
+		<a href="#" class= "signUp">新規登録</a><br>
+
+		<form action="/Example/FormSampleServlet" method="post">
+		<div align="center">
+		<p>ログインID　　<input type="text" name="id" size="50"></p>
+		<p>ユーザ名　　　<input type="text" name="userName" size="50"></p>
+		<p>生年月日　　　<input type="date" name="birthday1" size="30" placeholder="年/月/日">
+		　　～　　　
+		<input type="date" name="birthday2" size="30" placeholder="年/月/日"><br><br></p>
+		<p class="submit">
+			<input type="submit" name="submit"  value="検索" style="WIDTH: 100px">
+		</p>
+		</div>
+		</form>
+
+		<hr width="90%">
+
+		<table>
+		<tr>
+		<th>ログインID</th><th>ユーザ名</th><th>生年月日</th><th></th>
+		</tr>
+		<tr>
+		<td>id0001</td><td>田中太郎</td><td>1989年04月26日</td>
+		<td align="center"><a href="/WebProgramming/userDetail.html" class="detail_btn">　詳細　</a>
+		<a href="#" class="update_btn">　更新　</a>
+		<a href="#" class="delete_btn">　削除　</a></td>
+		</tr>
+		<tr>
+		<td>id0002</td><td>佐藤二郎</td><td>2001年11月12日</td>
+		<td align="center"><a href="/WebProgramming/userDetail.html" class="detail_btn">　詳細　</a>
+		<a href="#" class="update_btn">　更新　</a>
+		<a href="#" class="delete_btn">　削除　</a></td>
+		</tr>
+		<tr>
+		<td>id0003</td><td>佐川真司</td><td>2000年01月01日</td>
+		<td align="center"><a href="/WebProgramming/userDetail.html" class="detail_btn">　詳細　</a>
+		<a href="#" class="update_btn">　更新　</a>
+		<a href="#" class="delete_btn">　削除　</a></td>
+		</tr>
+		</table>
+
+	</div>
+
+	</body>
+</html>

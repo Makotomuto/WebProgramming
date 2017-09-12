@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ユーザ新規登録</title>
+		<style>
+			header {
+			position: fixed !important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+    		height: 50px;
+    		background: #A4A4A4;
+    		color: #000;
+    		font-weight: bold
+			}
+			span#userName{
+			position: absolute;
+			color: #FFF;
+			bottom: 0;
+			right: 200px;}
+
+			span#logOut{
+			position: absolute;
+			bottom: 0;
+			right: 70px;
+			text-decoration: underline;
+			color: #FF0000;
+			}
+
+			#container{
+			padding:70px 0;}
+
+			h1{
+			text-align: center;}
+
+			p{
+			font-weight: bold;
+			}
+
+			input[type="text"],input[type="password"]{
+			width: 400px;
+			height: 24px}
+
+			.return{
+			position:absolute;
+			right: 1150px;
+			text-decoration: underline;
+			color: blue;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<span id = userName>ユーザー名 さん</span>
+			<span id = logOut><a href="#" style="color:#ff0000;text-decoration:none">ログアウト</a></span>
+		</header>
+
+		<div id="container">
+			<h1>ユーザ新規登録</h1>
+
+			<form action="/Example/FormSampleServlet" method="post">
+			<div align="center">
+				<p>ログインID　　　　　　<input type="text" name="id"></p>
+				<p>パスワード　　　　　　<input  type="password" name="password"></p>
+				<p>パスワード(確認)　　　<input  type="password" name="password"></p>
+				<p>ユーザ名　　　　　　　<input type="text" name="userName"></p>
+				<p>生年月日　　　　　　　<input type="text" name="birthday"></p><br>
+				<p class="submit">
+					<input type="submit" name="submit"  value="登録" style="WIDTH: 100px">
+				</p>
+			</div><br>
+			</form>
+
+			<a href="/WebProgramming/userList.html" class= "return">戻る</a>
+
+		</div>
+	</body>
+</html>
