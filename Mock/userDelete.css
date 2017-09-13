@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+header {
+			position: fixed !important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+    		height: 50px;
+    		background: #A4A4A4;
+    		color: #000;
+    		font-weight: bold
+			}
+			span#userName{
+			position: absolute;
+			color: #FFF;
+			bottom: 0;
+			right: 200px;}
+
+			span#logOut{
+			position: absolute;
+			bottom: 0;
+			right: 70px;
+			text-decoration: underline;
+			color: #FF0000;
+			}
+
+			#container{
+			padding:70px 0;}
+
+			h1{
+			text-align: center;}
+
+			.text{
+			float: left;
+			margin-left: 43%;
+			width: 57%;
+			height:120px;
+			line-height: 120%;
+			}
+
+			button{
+			width: 90px;
+			height: 30px
+			}

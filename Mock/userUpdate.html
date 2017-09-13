@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ユーザ情報更新</title>
+		<link rel="stylesheet" type="text/css" href="userDetail.css">
+	</head>
+	<body>
+		<header>
+			<span id = userName>ユーザー名 さん</span>
+			<span id = logOut><a href="index.html" style="color:#ff0000;text-decoration:none">ログアウト</a></span>
+		</header>
+
+		<div id="container">
+			<h1>ユーザ情報更新</h1>
+
+			<div class="item">
+			<p>ログインID</p>
+			<p>パスワード</p>
+			<p>パスワード(確認)</p>
+			<p>ユーザ名</p>
+			<p>生年月日</p>
+			</div>
+
+			<div class="info">
+			<p>id0001</p>
+			<form action="userList.html" method="post">
+			<p><input type="password" name="password" ></p>
+			<p><input type="password" name="password"></p>
+			<p><input type="text" name="text" value="田中太郎"></p>
+			<p><input type="date" name="date" value="1989/04/26"></p>
+			</form>
+			</div>
+
+			<form action="userList.html" method="post">
+			<p class="update">
+			<input type="submit" name="submit" value="更新" style="WIDTH: 90px">
+			</p>
+			</form>
+
+			<div align="center">
+			<a onclick="history.back()" class= "return">戻る</a>
+			</div>
+		</div>
+
+	</body>
+</html>
