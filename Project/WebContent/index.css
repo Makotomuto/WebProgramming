@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+.item{font-weight: bold;}
+
+input[type="text"],input[type="password"]{width: 200px;}

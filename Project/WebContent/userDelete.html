@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ユーザ削除確認</title>
+		<link rel="stylesheet" type="text/css" href="userDelete.css">
+	</head>
+	<body>
+		<header>
+			<span id = userName>ユーザー名 さん</span>
+			<span id = logOut><a href="index.html" style="color:#ff0000;text-decoration:none">ログアウト</a></span>
+		</header>
+
+		<div id="container">
+			<h1>ユーザ削除確認</h1>
+
+			<div class="text">
+			<p>ログインID：id0001</p>
+			<p>を本当に削除してよろしいでしょうか。</p><br><br>
+			</div>
+
+			<form action="userList.html" method="post">
+			<div align="center">
+			<span>
+			<button>キャンセル</button>
+			</span>&emsp;&emsp;&emsp;&emsp;
+
+			<span>
+			<button type="submit" name="submit">OK</button>
+			</span>
+			</div>
+			</form>
+
+		</div>
+	</body>
+</html>

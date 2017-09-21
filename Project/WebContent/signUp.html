@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ユーザ新規登録</title>
+		<link rel="stylesheet" type="text/css" href="signUp.css">
+	</head>
+	<body>
+		<header>
+			<span id = userName>ユーザー名 さん</span>
+			<span id = logOut><a href="index.html" style="color:#ff0000;text-decoration:none">ログアウト</a></span>
+		</header>
+
+		<div id="container">
+			<h1>ユーザ新規登録</h1>
+
+			<form action="userList.html" method="post">
+			<div align="center">
+				<p>ログインID　　　　　　<input type="text" name="id"></p>
+				<p>パスワード　　　　　　<input  type="password" name="password"></p>
+				<p>パスワード(確認)　　　<input  type="password" name="password"></p>
+				<p>ユーザ名　　　　　　　<input type="text" name="userName"></p>
+				<p>生年月日　　　　　　　<input type="text" name="birthday"></p><br>
+				<p class="submit">
+					<input type="submit" name="submit"  value="登録" style="WIDTH: 100px">
+				</p>
+			</div><br>
+			</form>
+
+			<a onclick="history.back()" class= "return">戻る</a>
+
+		</div>
+	</body>
+</html>

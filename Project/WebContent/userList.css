@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+	html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%
+	}
+
+	header {
+		position: fixed !important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+    	height: 50px;
+    	background: #A4A4A4;
+    	color: #000;
+    	font-weight: bold
+	}
+	span#userName{
+	position: absolute;
+	color: #FFF;
+	bottom: 0;
+	right: 200px;}
+
+	span#logOut{
+	position: absolute;
+	bottom: 0;
+	right: 70px;
+	text-decoration: underline;
+	color: #FF0000;
+	}
+
+	#container{
+	padding:70px 0;}
+
+	h1{
+	text-align: center;}
+
+	.signUp{
+	position: absolute;
+	left: 1245px;
+	text-decoration: underline;
+	color: blue;
+	}
+
+	p{
+	font-weight: bold}
+
+	.submit{
+	position: relative;
+	left: 300px;
+	}
+
+	table {
+	border-collapse: collapse;
+	margin-left: auto;
+ 	margin-right: auto;
+	width: 40%;
+	}
+	th{
+	background-color: #D8D8D8;}
+	th,td {
+	border: solid 1px;
+	padding: 0.5em;
+	}
+
+	.detail_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #5858FA;
+    transition: .4s;
+	}
+
+	.detail_btn:hover {
+  	  background: #58ACFA;
+	}
+	.update_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #04B45F;
+    transition: .4s;
+	}
+
+	.update_btn:hover {
+  	  background: #3ADF00;
+	}
+	.delete_btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #FA5858;
+    transition: .4s;
+	}
+
+	.delete_btn:hover {
+  	  background: #F78181;
+	}
